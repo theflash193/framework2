@@ -1,0 +1,9 @@
+{
+    "app": {
+        "selectlanguage": "Chose language",
+        "english": "english",
+        "french": "french",
+        "home": "app.home",
+        "logout": "app.logout"
+    }
+}

@@ -5,11 +5,15 @@ nav(class="nav style3")
 				div(class="collaspe navbar-collaspe")
 					ul(class="nav navbar-nav")
 						li
-							a(href="/") Home
+							a(href="/")= t('app.home')
 						if Role === 'Admin'
 							li
-								a(href="/admin") Administration
+								a(href="/admin")= t('app.admin')
 					ul(class="nav navbar-nav navbar-right")
 						li
-							a(href="/logout") 
-								span(class="glyphicon glyphicon-log-in")  Deconnexion
+							a(href="/?setLng=en-EN")= t('app.english')
+						li
+							a(href="/?setLng=fr-FR")= t('app.french')
+						li
+							a(href="/logout")
+								= t('app.logout')

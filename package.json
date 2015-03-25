@@ -22,6 +22,8 @@
     "express-session": "*",
     "bson": "*",
     "nodemailer": "*",
-    "easyrole": "*"
+    "easyrole": "*",
+    "i18next": "*",
+    "ticketman": "*",
   }
 }

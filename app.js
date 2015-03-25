@@ -15,6 +15,12 @@ var UserManagement = require('user-management');
 var easymongo = require('easymongo');
 var mongo = new easymongo('mongodb://localhost/user_management');
 var USER = mongo.collection('users');
+var i18n = require('i18next');
+
+i18n.init({
+    saveMissing: true,
+    debug: true
+});
 
 function VerifyCredential(USERNAME, PASSWORD, done)
 {
@@ -50,6 +56,7 @@ app.set('view engine', 'jade');
 //app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
+app.use(i18n.handle);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
@@ -61,6 +68,7 @@ app.use(expressSession( {
 app.use(passport.initialize());
 app.use(passport.session());
 passport.use(new LocalStrategy(VerifyCredential));
+i18n.registerAppHelper(app);
 
 passport.serializeUser(function(user, done) {
     var users = new UserManagement();

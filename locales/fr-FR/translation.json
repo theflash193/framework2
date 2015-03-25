@@ -1,0 +1,10 @@
+{
+	"app": {
+		"selectlanguage": "Choisiser le language",
+		"english": "englais",
+		"french": "français",
+		"admin": "administration",
+		"home": "Accueil",
+		"logout": "Deconnexion"
+	}
+}
