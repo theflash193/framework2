@@ -1,0 +1,142 @@
+
+/* Color */
+.dark
+{
+	color: #aaa;
+	color: rgba(255,255,255,0.65);
+}
+
+.style2
+{
+	background: url('images/bgtr.svg') top right no-repeat,
+	url('images/bgbl.svg') bottom left no-repeat,
+	url('images/overlay.png'),
+	linear-gradient(45deg, #384955, #655361, #85505f);
+}
+
+.style1
+{
+	background: url('images/bgtr.svg') top right no-repeat,
+	 url('images/bgbl.svg') bottom left no-repeat,
+	 url('images/bgbl.svg') bottom left no-repeat,
+	 url('images/overlay.png'),
+	 linear-gradient(45deg, #b39c68, #a56365, #412e4c);
+}
+
+.style3 {
+  background: url('images/bgtr.svg') top right no-repeat,
+ url('images/bgbl.svg') bottom left no-repeat,
+ url('images/overlay.png'),
+ linear-gradient(45deg, #5f796b, #3a4e59, #2f394e);
+}
+
+/*full image background*/
+#full2 {
+    background : url("../images/tempesto.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/*Sign_in*/
+.login-container .login-main .form-inputs .login-title .sign_in
+{
+	margin: 10px;
+}
+
+.login-container
+{
+	margin: 100px auto;
+	max-width: 480px;
+}
+
+.login-title
+{
+	text-align: center;
+	color: #FFF;
+}
+.sign-in
+{
+	text-align: center;
+	background: rgba(33,33,33,0.9);
+	padding: 10px;
+	color: #FFF;
+	font-size: 1.8em;
+}
+
+.login-main
+{
+    background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.15);
+	background: rgba(33,33,33,0.9);
+	border-radius: 0 0 5px 5px;
+	padding: 10px;
+}
+
+#transparent
+{
+	background-color: transparent;
+}
+
+.button
+{
+    background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 0px 0px 1px #FFF inset;
+    color: #FFF;
+}
+
+.btn-login
+{
+	display: block;
+	margin: 30px auto;
+	width: 250px;
+	font-size: 1.8em;
+	border: none;
+}
+
+#Password
+{
+	max-width: 400px;
+	overflow: scroll;
+}
+
+.spacer
+{
+	margin-top: 28px;
+}
+/*Footer*/
+.footer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #5f796b;
+	color: #fff;
+}
+
+container .text-muted {
+  margin: 20px 0;
+}
+
+.text-muted {
+	color: #777;
+}
+
+.content {
+	background-color: #fff;
+	padding-right: 60px;
+	padding-left: 60px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	border-radius: 4px;
+}
+
+.nav>li>a {
+	color: #fff;
+}
+
+.navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #5F796B;
+    background-color: transparent;
+}

@@ -1,0 +1,15 @@
+nav(class="nav style3")
+	.container-fluid
+		.container
+			.row
+				div(class="collaspe navbar-collaspe")
+					ul(class="nav navbar-nav")
+						li
+							a(href="/") Home
+						if Role === 'Admin'
+							li
+								a(href="/admin") Administration
+					ul(class="nav navbar-nav navbar-right")
+						li
+							a(href="/logout") 
+								span(class="glyphicon glyphicon-log-in")  Deconnexion

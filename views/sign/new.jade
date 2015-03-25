@@ -1,0 +1,9 @@
+extends ../layout
+
+block content
+	.container
+		.content.spacer
+			if (form !== 'undefined')
+				form(method='post')
+					!= form
+					input(type='submit')

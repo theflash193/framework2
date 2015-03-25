@@ -1,0 +1,31 @@
+extends ../layout
+
+block content
+	.container
+		.jumbotron.spacer
+			h1 Panel d'administration
+
+		div.content.spacer
+			a(href="/admin/create", class="btn btn-primary", role="button") ajouter un utilisateur
+			h1 Liste des utilisateurs		
+			div.table-responsive.spacer
+				table(class="table-bordered")
+					thead
+						tr
+							th Username
+							th Password
+							th Email
+							th Role
+					tbody
+					each user in users
+						tr
+							td #{user.username}
+							td(id="Password") #{user.password}
+							td #{user.extras.email}
+							td #{user.extras.role}
+							td 
+								a(href="/admin/delete/user/" + user.username, role="button", class="btn btn-default") delete
+							td
+								a(href="/admin/edit/" + user._id, role="button", class="btn btn-default") edit
+							td
+								a(href="/admin/role/" + user._id, role="button", class="btn btn-default") change role

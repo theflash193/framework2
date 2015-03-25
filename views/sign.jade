@@ -1,0 +1,24 @@
+doctype html
+html.full
+	include  ./includes/head.jade
+	body(id="transparent")
+		.container-fluid
+			.row
+				.col-md-12
+					div(class="dark login-container")
+						.login-title
+							h1 Connexion
+						div(class="sign-in")
+							div
+								a(href="/sign/new") création de compte
+						.login-main
+							form(method="post")
+								.form-inputs
+									.form-group
+										label(for="username")
+										input(type="username", class="form-control",id="text", placeholder="login", name="username")
+									.form-group
+										label(for="password")
+										input(type="password", class="form-control", id="password", placeholder="password", name="password")
+								.form-action
+									button(type="submit", class="btn btn-login button") submit
